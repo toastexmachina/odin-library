@@ -11,4 +11,6 @@ function addBookToLibrary() {
     // moves Book objects into myLibrary Array
 }
 
+// myLibrary -> HTML Table
+
 
