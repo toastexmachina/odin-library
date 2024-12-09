@@ -11,6 +11,11 @@ function addBookToLibrary() {
     // moves Book objects into myLibrary Array
 }
 
-// myLibrary -> HTML Table
+// General Structure
+// User fills out form
+// Submit button triggers event listener
+// Form entries get stored in Book Constructor
+// New objects get sent to myLibrary array
+// Array entry values get added to the table
 
-
+let buttonSubmit = document.querySelector('#submit')
