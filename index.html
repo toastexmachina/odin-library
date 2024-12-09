@@ -10,9 +10,9 @@
 <body>
 
     <!-- Create a Submission Form--Title, Medium, Read/Not Read-->
-     <form action="" method="post">
+     <form action="./script.js" method="post">
         <label for="title">Title: </label>
-        <input type="text" id="title" name="title" placeholder="The Great Gatsby">
+        <input type="text" id="title" name="title" placeholder="The Great Gatsby" required>
 
         <label for="medium">Medium: </label>
         <select name="medium" id="medium">
@@ -25,9 +25,9 @@
 
         <label for="status">Status: </label>
         <select name="status" id="status">
-            <option value="Read">Read</option>
+            <option value="read">Read</option>
             <option value="reading">Reading</option>
-            <option value="not-read">Not Read</option>
+            <option value="unread">Unread</option>
         </select>
 
         <button type="submit" id="submit">Submit</button>
@@ -46,6 +46,7 @@
             <td></td>
         </tr>
     </table>
-    
+
+
 </body>
 </html>
