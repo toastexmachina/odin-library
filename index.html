@@ -8,6 +8,30 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
+
+    <!-- Create a Submission Form--Title, Medium, Read/Not Read-->
+     <form action="" method="post">
+        <label for="title">Title: </label>
+        <input type="text" id="title" name="title" placeholder="The Great Gatsby">
+
+        <label for="medium">Medium: </label>
+        <select name="medium" id="medium">
+            <option value="book">Book</option>
+            <option value="movie">Movie</option>
+            <option value="tv-show">TV</option>
+            <option value="manga">Manga / Manhwa</option>
+            <option value="documentary">Documentary</option>
+        </select>
+
+        <label for="status">Status: </label>
+        <select name="status" id="status">
+            <option value="Read">Read</option>
+            <option value="reading">Reading</option>
+            <option value="not-read">Not Read</option>
+        </select>
+     </form>
+     
+    <!-- Create a table of titles with info -->
     
 </body>
 </html>
