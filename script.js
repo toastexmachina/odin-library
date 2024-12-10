@@ -32,9 +32,20 @@ buttonSubmit.addEventListener('click', function(event){
     let newTitle = document.createElement('td');
     let newMedium = document.createElement('td');
     let newStatus = document.createElement('td');
+
+    let newRemoveCell = document.createElement('td');
+    let newRemoveButton = document.createElement('button');
+    newRemoveButton.classList.add('remove');
+    newRemoveButton.textContent = "X";
+    newRemoveButton.addEventListener('click', function(event){
+        newEntry.remove();
+    })
+
     newEntry.appendChild(newTitle);
     newEntry.appendChild(newMedium);
     newEntry.appendChild(newStatus);
+    newEntry.appendChild(newRemoveCell);
+    newRemoveCell.appendChild(newRemoveButton);
 
     // call Book function here
     let newBook = new Book(form.title.value, form.medium.value, form.status.value);
